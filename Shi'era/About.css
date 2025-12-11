@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background: url("image.jpg");
+  color: whitesmoke;
+}
+.logo{
+  width: 45px;
+  height: 45px;
+}
+nav{
+  background-color: rgb(6,10,30);
+  color: whitesmoke;
+  padding: 15px;
+  position: fixed; 
+  left:0;
+  top: 0;
+  z-index: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+}
+#menu-toggle{
+  display: none;
+}
+.menu-btn{
+  font-size: 30px;
+  display: inline-block;
+}
+.nav-link{
+  display: none;
+  background-color: rgba(6,10,30,0.7);
+  padding: 10px 0;
+  position: absolute;
+  top: 50px; 
+  left: 0;
+  width: 100%;
+  border-radius: 8px;
+  
+}
+.nav-link a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.2s ease;
+}
+#menu-toggle:checked ~ .nav-link{
+  display: block;
+}
+.menu-btn::before{
+  content: "☰";
+}
+#menu-toggle:checked ~ .menu-btn::before{
+  content: "✖";
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a{
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+nav li a:hover{
+  color: mediumpurple;
+}
+.title{
+  background: linear-gradient(90deg,mediumpurple,purple,white);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-top: 70px;
+  text-shadow:3px 3px white;
+}
+.mission{
+  border: 2px solid white;
+  border-radius: 17px;
+  margin:25px;
+  padding:20px;
+}
+.mission:hover{
+  box-shadow: 3px 3px white;
+  background: rgba(0,0,0,0.7);
+  height: 50%;
+  border-radius: 50px;
+  transition: all 0.5s ease ;
+}
+.mission-h{
+  text-align: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px mediumpurple;
+}
+.mission-p{
+  text-align: justify;
+  text-indent: 15px;
+  
+}
+.who{
+  border: 2px solid white;
+  border-radius: 17px;
+  margin:25px;
+  padding:20px;
+}
+.who:hover{
+  box-shadow: 3px 3px white;
+  background: rgba(0,0,0,0.7);
+  height: 50%;
+  border-radius: 50px;
+  transition: all 0.5s ease ;
+}
+.who-h{
+  text-align: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px mediumpurple
+}
+.who-p{
+  text-align: justify;
+  text-indent: 15px;
+  
+}
+.vision{
+  border: 2px solid white;
+  border-radius: 17px;
+  margin:25px;
+  padding:20px;
+}
+.vision:hover{
+  box-shadow: 3px 3px white;
+  background: rgba(0,0,0,0.7);
+  height: 50%;
+  border-radius: 50px;
+  transition: all 0.5s ease ;
+}
+.vision-h{
+  text-align: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px mediumpurple
+}
+.vision-p{
+  text-align: justify;
+  text-indent: 15px;
+}
+.contact-title{
+  margin: 15px;
+  text-align: center;
+  text-shadow: 2px 2px mediumpurple;
+}
+.contact-div{
+  border: 2px solid white;
+  border-radius: 17px;
+  margin:25px;
+  padding:20px;
+}
+.email{
+  text-decoration: none;
+  font-weight: bold;
+  color: mediumpurple;
+  padding: 5px;
+  margin-left: 10px;
+  margin-bottom: 60px;
+}
+.tg{
+  text-decoration: none;
+  font-weight: bold;
+  color: mediumpurple;
+  padding: 5px;
+  margin-left: 10px;
+  margin-bottom: 60px;
+}
+.linkdin{
+  text-decoration: none;
+  font-weight: bold;
+  color: mediumpurple;
+  padding: 5px;
+  margin-left: 10px;
+  margin-bottom: 60px;
+}
+.footerr{
+margin: 10px;
+text-align: center;
+}
+.register{
+  border: 2px solid grey;
+}
+.form-h{
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+.mainform{
+  margin: 10px;
+}
