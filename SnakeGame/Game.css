@@ -1,1 +1,104 @@
+body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: grey;
+      font-family: "Anton", sans-serif;
+      flex-direction: column;
+    }
 
+    .scores {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 20px;
+    }
+
+    .scores h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    #game-board {
+      display: grid;
+      grid-template-columns: repeat(20, 15px);
+      grid-template-rows: repeat(20, 15px);
+      width: 300px;
+      height: 300px;
+      background: green;
+    }
+
+    .game-boarder-1 {
+      border: 15px solid rgb(123, 12, 12);
+      border-radius: 15px;
+      position: relative;
+    }
+
+    .snake,
+    .food {
+      width: 15px;
+      height: 15px;
+      box-sizing: border-box;
+    }
+
+    .snake {
+      background: black;
+      border: 1px dashed   #555;
+      border-radius: 30%;
+    }
+
+    .food {
+      background: blue;
+      border-radius: 50%;
+    }
+
+    #instruction-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+
+    .controls {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .control-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .arrow-btn {
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      background: rgb(123, 12, 12);
+      color: white;
+      border: 3px solid #5a0808;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.1s;
+      font-weight: bold;
+    }
+
+    .arrow-btn:active {
+      background: #5a0808;
+      transform: scale(0.95);
+    }
+
+    .arrow-btn:hover {
+      background: #8a0f0f;
+    }
