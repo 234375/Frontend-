@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather app</title>
+    <link rel="stylesheet" href="Weather.css">
+  </head>
+  <body>
+    <div class=main>
+      <div class="search">
+        <input placeholder="enter the city name...">
+        <button class="btn">search</button>
+       <!-- <p class="error"></p> -->
+      </div>
+      <img src="Images/rain.jpg" class="Weather_icon">
+      <div class="name">
+       <h1 class="city">Addis Abeba</h1>
+       <p class="country">ethiopia</p>
+       <p class="date"></p>
+       <h2 class="temp">27°c</h2>
+       <p class="condition"></p>
+      </div>
+      <div class="Condition">
+        <div class="humid">
+          <h3>Humidity</h3>
+          <i class="fa-solid fa-droplet"></i>
+          <p class="Humidity">50%</p>
+        </div>
+        <div class="wind">
+          <h3>wind speed</h3>
+          <p class="speed">13km/hr</p>
+        </div>
+      </div>
+    </div>
+    <script src="Weather.js"></script>
+  </body>
+</html>
